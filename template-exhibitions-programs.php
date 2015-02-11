@@ -115,5 +115,5 @@ Template Name: Exhibitions & Programs
 	</div>
 </div>
  <!-- End content wrapper -->
-	<script src="<?php echo get_template_directory_uri() ?>/assets/js/vendor/page.exhibits.js"></script> 
+	<script src="<?php echo get_template_directory_uri() ?>/assets/js/vendor/page.exhibits-min.js"></script> 
 		<?php get_footer(); ?>

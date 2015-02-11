@@ -4,7 +4,7 @@ For production environment search and replace javascripts/ for javascripts/min.
 -->
 <!***********ALL PAGES**************>  
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/foundation.min.js"></script> 
-<script src="<?php echo get_template_directory_uri() ?>/assets/js/vendor/app.js"></script> 
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/vendor/app-min.js"></script> 
 
 <!**********TABLET/MOBILE MENUS**************>  
 <?php if(is_tablet()) {  ?>
@@ -37,7 +37,7 @@ if ( is_page_template( 'template-people-directory.php' ) && $theme_option['flags
 <!***********DIRECTORY**************>
 <?php } 
 if ( is_page_template( 'template-courses-undergrad.php' ))   { ?>
-  	<script src="<?php echo get_template_directory_uri() ?>/assets/js/vendor/min.page.courses.js"></script>
+  	<script src="<?php echo get_template_directory_uri() ?>/assets/js/vendor/page.courses-min.js"></script>
 
 <!***********SINGLE ITEMS (NEWS & PEOPLE_**************>
 <?php } if (is_page_template('template-program-people.php') ) { ?>
@@ -69,33 +69,9 @@ if ( is_page_template( 'template-courses-undergrad.php' ))   { ?>
 	</script>
 <?php } ?>
 
-<!***********EXHIBITS**************>
-<?php if (  is_singular( 'ksasexhibits' ) ) { ?>
-	<script src="<?php echo get_template_directory_uri() ?>/assets/js/foundation/foundation.orbit.js"></script>
-<?php } ?>
-
 <!***********COURSES**************>
 <?php if ( is_page ('Courses')) { ?>
 <script src="<?php echo get_stylesheet_directory_uri() ?>/quicksearch.js"></script> 
-<?php } ?> 
-
-
-<!***********HOMEPAGE**************>
-<?php if ( is_front_page()) { ?>
-	<script src="<?php echo get_template_directory_uri() ?>/assets/js/foundation/foundation.orbit.js"></script>
-	<script>
-		//var $l = jQuery.noConflict();
-		//$l(window).load(function() {
-        //$l("#slider").orbit({
-        	//'animation' : 'fade',
-        	//'animationSpeed': 1000,
-        	//'timer' : true,
-        	//'advanceSpeed' : 8000,
-        	//'directionalNav' : false,
-	        //'bullets' : false,		
-       // });
-  // });
-   </script>
 <?php } ?> 
 
 <!***********EVENT CALENDAR**************>
