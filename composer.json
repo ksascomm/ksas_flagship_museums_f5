@@ -1,9 +1,9 @@
 {
-    "name": "ksascomm/ksas_flagship_academic_museums_f5",
+    "name": "ksascomm/ksas_flagship_museums_f5",
     "type": "wordpress-theme",
     "license": "GPL2",
   	"description": "Child theme of KSAS Flagship Academic, includes Exhibits section",
-  	"homepage": "http://github.com/ksascomm/ksas_flagship_academic_museums_f5",
+  	"homepage": "http://github.com/ksascomm/ksas_flagship_museums_f5",
   	"authors": [
       {
       "name": "Tim Gelles",
