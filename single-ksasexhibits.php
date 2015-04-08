@@ -38,7 +38,7 @@
 					    $attachments = get_posts( $args );
 					    if( ! empty( $attachments ) ) :
 					?>
-					<ul id="slider" data-orbit data-options="animation: fade; animation_speed:2000; timer:true; advance_speed:1500; navigation_arrows:false; bullets:false; slide_number:false;" class="exhibit-slide">
+					<ul id="slider" data-orbit data-options="animation: fade; animation_speed:2000; timer:true; advance_speed:700; navigation_arrows:false; bullets:false; slide_number:false;" class="exhibit-slide">
 					  <?php foreach ( $attachments as $attachment ) {
 				            $alt = get_post_meta($attachment->ID, '_wp_attachment_image_alt', true);
 				            $image_title = $attachment->post_title;
