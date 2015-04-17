@@ -14,7 +14,7 @@
 <div class="row hide-for-small-only">
 <div class="slideshow-wrapper">
   <div class="preloader"></div>
-<ul id="slider" data-orbit data-options="animation: fade; animationSpeed:2000; timer:true; advanceSpeed:1000; navigation_arrows:true; bullets:false; slide_number:false;">
+<ul id="slider" data-orbit data-options="animation: fade; animation_speed:2000; timer:true; timer_speed:3000; navigation_arrows:false; bullets:false; slide_number:false;">
 <?php while ($slider_query->have_posts()) : $slider_query->the_post(); ?>
 <li><a href="<?php echo get_post_meta($post->ID, 'ecpt_urldestination', true); ?>">
 <div class="slide">
