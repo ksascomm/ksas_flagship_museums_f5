@@ -226,6 +226,10 @@ margin-top: inherit;
 margin-top: 25%;
 }
 
+li.nowrap {
+    margin-left: 0px;
+}
+
 /*IE9 Queries*/
 @media (min-width: 1023px) {
     #mobile-nav {
