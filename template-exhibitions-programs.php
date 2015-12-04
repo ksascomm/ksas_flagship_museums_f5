@@ -76,7 +76,7 @@ Template Name: Exhibitions & Programs
 		<div class="medium-4 small-12 columns mobile-field  <?php echo $program_type_name . ' ' . $school_name; ?>">
 			
 			<div class="small-12 columns field radius10" id="<?php echo $program_name; ?>">
-			<a href="<?php echo get_permalink() ?>" title="<?php the_title(); ?>" class="field">
+				<a href="<?php echo get_permalink() ?>" title="<?php the_title(); ?>" class="field">
 					<?php if ( has_post_thumbnail()) { ?> 
 						<?php the_post_thumbnail('exhibits'); ?>
 					<?php } ?>			    
@@ -101,8 +101,7 @@ Template Name: Exhibitions & Programs
 					</div>
 				</div>
 			</div>
-		</a>
-	</div>
+		</div>
 	<?php endwhile; ?>
 
 	<div class="row" id="noresults">
