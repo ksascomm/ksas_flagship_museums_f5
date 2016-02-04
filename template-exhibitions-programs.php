@@ -15,11 +15,11 @@ Template Name: Exhibitions & Programs
 
 <div class="row wrapper radius10">
 	<div class="small-12 columns">
-		<section class="row">
+		<div class="row">
 			
-			<div class="large-7 columns copy">
+			<div class="large-7 columns content">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<h2><?php the_title();?></h2>
+				<h1 class="page-title"><?php the_title();?></h1>
 				<p><?php the_content(); ?></p>
 			<?php endwhile; endif; ?>
 			</div>
@@ -54,9 +54,9 @@ Template Name: Exhibitions & Programs
 					</fieldset>
 				</form>
 			</div>
-		</section>
+		</div>
 
-		<section class="row" id="fields_container" role="main">
+		<main class="row" id="fields_container" role="main">
 			<?php while ($flagship_exhibitions_query->have_posts()) : $flagship_exhibitions_query->the_post(); 
 		//Pull discipline array (humanities, natural, social)
 		$program_types = get_the_terms( $post->ID, 'exhibition_type' );
@@ -109,7 +109,7 @@ Template Name: Exhibitions & Programs
 				<h3> No matching results</h3>
 			</div>
 	</div>
-		</section>
+		</main>
 		
 	</div>
 </div>
