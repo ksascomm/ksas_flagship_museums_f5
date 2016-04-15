@@ -233,15 +233,3 @@ margin-top: inherit;
 li.nowrap {
     margin-left: 0px;
 }
-
-/*IE9 Queries*/
-@media (min-width: 1023px) {
-    #mobile-nav {
-    display: none !important;
-  }
-}
-@media (max-width: 1023px) {
-    #desktop-nav {
-    display: none;
-  }
-}
