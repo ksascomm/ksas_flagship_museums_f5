@@ -5,8 +5,7 @@ For production environment search and replace javascripts/ for javascripts/min.
 <!***********ALL PAGES**************>  
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/foundation.min.js"></script> 
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/vendor/app-min.js"></script> 
-<script src="<?php echo get_template_directory_uri() ?>/assets/js/vendor/offcanvas.js"></script> 
-
+<script src="<?php echo get_template_directory_uri() ?>/assets/js/vendor/offcanvas.js"></script>
 
 <!**********TABLET/MOBILE MENUS**************>  
 <?php if(is_tablet()) {  ?>
