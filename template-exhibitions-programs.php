@@ -17,16 +17,15 @@ Template Name: Exhibitions & Programs
 	<div class="small-12 columns">
 		<div class="row">
 			
-			<div class="large-7 columns content">
+			<div class="small-12 large-7 columns content">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<h1 class="page-title"><?php the_title();?></h1>
 				<p><?php the_content(); ?></p>
 			<?php endwhile; endif; ?>
 			</div>
 
-			<div class="large-5 columns" id="fields_search" role="search">
-				<form action="#">
-					<fieldset class="radius10"> 
+			<div class="small-12 large-5 columns panel radius10" id="fields_search" role="search">
+
 						<?php $exhibits = get_terms('exhibition_type', array(
 							'orderby' 		=> 'ID',
 							'order'			=> 'ASC',
@@ -48,11 +47,15 @@ Template Name: Exhibitions & Programs
 					<?php } ?>
 					<div class="row">
 						<h5>Search by keyword:</h5>		
-						<input type="submit" class="icon-search" placeholder="Search by name/keyword" value="&#xe004;" />
+						<div class="directory-search">
+							<span class="fa fa-search fa-2x" aria-hidden="true"></span>
+						</div>
 						<input type="text" name="search" value="" id="id_search" aria-label="Search"  /> 
+						<label for="id_search" class="screen-reader-text">
+							Search by keyword
+						</label>
 					</div>
-					</fieldset>
-				</form>
+
 			</div>
 		</div>
 
