@@ -59,7 +59,7 @@ Template Name: Exhibitions & Programs
 			</div>
 		</div>
 
-		<main class="row" id="fields_container" role="main">
+		<main class="row" id="fields_container">
 			<?php while ($flagship_exhibitions_query->have_posts()) : $flagship_exhibitions_query->the_post(); 
 		//Pull discipline array (humanities, natural, social)
 		$program_types = get_the_terms( $post->ID, 'exhibition_type' );
